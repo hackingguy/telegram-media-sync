@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "025b6460fe4b9b4d45b2449d5902bf26",
+    "entities": [
+      {
+        "tableName": "synced_files",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`filePath` TEXT NOT NULL, `syncTimestamp` INTEGER NOT NULL, `messageId` INTEGER NOT NULL, `type` TEXT NOT NULL, PRIMARY KEY(`filePath`))",
+        "fields": [
+          {
+            "fieldPath": "filePath",
+            "columnName": "filePath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncTimestamp",
+            "columnName": "syncTimestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "messageId",
+            "columnName": "messageId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "filePath"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '025b6460fe4b9b4d45b2449d5902bf26')"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.TelegramDrive" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/telegram_blue</item>
+        <item name="colorPrimaryVariant">@color/telegram_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/telegram_blue_light</item>
+        <item name="colorSecondaryVariant">@color/telegram_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- No Action Bar theme -->
+    <style name="Theme.TelegramDrive.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/telegram_blue</item>
+        <item name="colorPrimaryVariant">@color/telegram_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/telegram_blue_light</item>
+        <item name="colorSecondaryVariant">@color/telegram_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+</resources> 

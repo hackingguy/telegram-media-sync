@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Network Settings Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Settings"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/requireWifiSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload only on Wi-Fi"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Battery Settings Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Settings"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/requireChargingSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prefer upload while charging"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/requireBatteryNotLowSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop upload on low battery"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Battery Threshold"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/batteryThresholdSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:valueFrom="5"
+            android:valueTo="50"
+            android:stepSize="5"/>
+
+        <TextView
+            android:id="@+id/batteryThresholdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+    </LinearLayout>
+
+    <!-- Backup Settings Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backup Settings"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/compressImagesSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compress images before upload"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/batchSizeLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Batch Size (files per upload)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/batchSizeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/retryCountLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Max Retry Count">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/retryCountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Battery Optimization Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Optimization"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/batteryOptimizationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable Battery Optimization"/>
+
+    <!-- Add this after other settings -->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/autoRestartSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto-restart sync after reboot"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout> 

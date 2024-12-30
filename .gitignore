@@ -1,0 +1,83 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+release/
+
+# Local configuration file
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+.navigation/
+captures/
+output.json
+
+# External native build folder
+.externalNativeBuild/
+.cxx/
+
+# Version control
+vcs.xml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Keystore files
+*.keystore
+*.jks
+keystore.base64
+
+# Log Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.keystore
+*.jks
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+# Backup files
+*.bak
+*.tmp
+*.swp 

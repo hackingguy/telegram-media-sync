@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Telegram colors for dark theme -->
+    <color name="telegram_background">#1C1C1C</color>
+    <color name="telegram_surface">#2B2B2B</color>
+    <color name="telegram_primary_text">#FFFFFF</color>
+    <color name="telegram_secondary_text">#AAAAAA</color>
+</resources> 
